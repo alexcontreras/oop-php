@@ -1,15 +1,20 @@
 <?php
 	class User {
-		public $username = 'alexcontreras';
-		public $email = 'ac@jexan.com';
+		public $username;
+		public $email;
+
+		public function __construct($username, $email) {
+			$this->username = $username;
+			$this->email = $email;
+		}
 
 		public function addFriend() {
 			return "$this->email added a new friend";
 		}
 	}
 
-	$userOne = new User();
-	$userTwo = new User();
+	$userOne = new User('mario', 'mario@jexan.com');
+	$userTwo = new User('luigi', 'luigi@jexan.com');
 
 	echo $userOne->username . '<br>';
 	echo $userOne->email . '<br>';
