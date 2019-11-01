@@ -15,9 +15,6 @@
 	echo $userOne->email . '<br>';
 	echo $userOne->addFriend() . '<br>';
 
-	$userTwo->username = 'ricardo';
-	$userTwo->email = 'rvigilc@gmail.com';
-
 	echo $userTwo->username . '<br>';
 	echo $userTwo->email . '<br>';
 	echo $userTwo->addFriend() . '<br>';
